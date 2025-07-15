@@ -21,10 +21,10 @@ const pathComponents = pathname.split('/').slice(1);
 ---
 
 <header
-	class="flex p-4 justify-between bg-slate-200/50 backdrop-blur-lg fixed w-screen top-0 items-center border-b"
+	class="fixed top-0 flex w-screen items-center justify-between border-b bg-slate-200/50 p-4 backdrop-blur-lg"
 >
 	<div>
-		<a class="font-bold text-2xl" href="/"> ghall.space </a>
+		<a class="text-2xl font-bold" href="/"> ghall.space </a>
 	</div>
 	<nav class="flex gap-4">
 		{
@@ -32,7 +32,7 @@ const pathComponents = pathname.split('/').slice(1);
 				<a href={`/${link.path}`} class="relative">
 					<span>{link.label}</span>
 					{pathComponents[0] === link.path ? (
-						<div class="h-[2px] w-full bg-blue-400 absolute" />
+						<div class="absolute h-[2px] w-full bg-blue-400" />
 					) : null}
 				</a>
 			))
