@@ -17,13 +17,7 @@ const { title, date, slug } = Astro.props;
 		{slug ? <a href={`/blog/${slug}`}>{title}</a> : title}
 	</h2>
 	<div>
-		<CalendarIcon class="calendar-icon" size={24} />
+		<CalendarIcon size={24} />
 		{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
 	</div>
 </div>
-
-<style>
-	.calendar-icon {
-		transform: translateY(0.3rem);
-	}
-</style>

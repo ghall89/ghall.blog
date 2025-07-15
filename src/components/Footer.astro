@@ -3,7 +3,7 @@ import RssIcon from '../img/svg/rss.svg';
 const year = new Date().getFullYear();
 ---
 
-<footer>
+<footer class="text-center py-6 bg-slate-100 mt-10">
 	<p>
 		Copyright 2022 - {year}, Graham Hall
 
@@ -11,15 +11,7 @@ const year = new Date().getFullYear();
 		Built with <a href="https://astro.build">Astro</a>
 	</p>
 
-	<p>
-		<a href="/rss.xml"
-			><RssIcon class="rss-icon" size={20} /> Subscribe with RSS</a
-		>
-	</p>
+	<a href="/rss.xml" class="flex justify-center items-center mt-2 w-fit mx-auto"
+		><RssIcon class="rss-icon" size={20} /> Subscribe with RSS</a
+	>
 </footer>
-
-<style>
-	.rss-icon {
-		transform: translateY(0.18rem);
-	}
-</style>

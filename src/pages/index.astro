@@ -19,7 +19,7 @@ const latestPost = posts.sort(
 ---
 
 <Layout title="Welcome">
-	<div transition:name="my-avatar">
+	<div class="mx-auto w-fit">
 		<Avatar size={200} />
 	</div>
 	<p>
@@ -50,10 +50,10 @@ const latestPost = posts.sort(
 		If you want to get in touch, I'm on <a
 			rel="me"
 			href="https://mastodon.social/@ghalldev"
-			target="_blank"><MastodonIcon size={iconSize} />Mastodon</a
+			target="_blank"><MastodonIcon class="inline" size={iconSize} />Mastodon</a
 		> and <a
 			href="https://bsky.app/profile/ghalldev.bsky.social"
-			target="_blank"><BlueskyIcon size={iconSize} />Bluesky</a
+			target="_blank"><BlueskyIcon class="inline" size={iconSize} />Bluesky</a
 		>.
 	</p>
 	<p>
@@ -63,9 +63,3 @@ const latestPost = posts.sort(
 		>.
 	</p>
 </Layout>
-
-<style>
-	a > svg {
-		transform: translateY(0.18rem);
-	}
-</style>

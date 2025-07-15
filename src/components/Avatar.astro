@@ -13,18 +13,7 @@ const { size } = Astro.props;
 <Image
 	src={portrait}
 	alt="Illustrated portrait of a person with glasses and a beard, wearing a red and black plaid shirt. The background is a solid green color."
-	class="portrait"
+	class="rounded-full"
 	width={`${size}`}
 	height={`${size}`}
 />
-
-<style>
-	.portrait {
-		display: block;
-		margin: auto;
-		border-radius: 200px;
-	}
-	a > svg {
-		transform: translateY(0.18rem);
-	}
-</style>

@@ -50,7 +50,7 @@ posts.sort(
 	<ul>
 		{
 			posts.map(({ slug, data }) => (
-				<li transition:name={slug}>
+				<li>
 					<a href={`/posts/${slug}`}>{data.title}</a> -
 					<span>
 						{format(add(new Date(data.pubDate), { hours: 6 }), 'MMM do, y')}
@@ -60,9 +60,3 @@ posts.sort(
 		}
 	</ul>
 </Layout>
-
-<style>
-	ul {
-		list-style: none;
-	}
-</style>

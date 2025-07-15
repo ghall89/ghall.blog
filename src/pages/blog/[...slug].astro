@@ -21,7 +21,7 @@ const { Content } = await post.render();
 ---
 
 <Layout title={data.title}>
-	<article transition:name={slug}>
+	<article>
 		<BlogHeader title={data.title} date={data.pubDate} />
 		<Content />
 		<a href="https://notbyai.fyi/">
